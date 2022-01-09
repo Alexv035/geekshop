@@ -20,6 +20,7 @@ class Product(models.Model):
 
     def __str__(self):
         return f"{self.name} ({self.category.name})"
+<<<<<<< HEAD
 
 
 class Contact(models.Model):
@@ -30,3 +31,5 @@ class Contact(models.Model):
 
     def __str__(self):
         return f"{self.pk} {self.email}"
+=======
+>>>>>>> 3456eceaa0cf341aec26164a3effe00ef62ce97a
