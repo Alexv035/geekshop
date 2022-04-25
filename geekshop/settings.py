@@ -42,7 +42,10 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "mainapp",
     "authnapp",
+<<<<<<< HEAD
     "basketapp",
+=======
+>>>>>>> 5539558d9be13560ab5dc147173724041e4ec066
 ]
 
 # Auth model

@@ -12,7 +12,10 @@ urlpatterns = [
     path("products/", include("mainapp.urls", namespace="products")),
     path("contact/", mainapp.contact, name="contact"),
     path("auth/", include("authnapp.urls", namespace="auth")),
+<<<<<<< HEAD
     path("basket/", include("basketapp.urls", namespace="basket")),
+=======
+>>>>>>> 5539558d9be13560ab5dc147173724041e4ec066
 ]
 
 if settings.DEBUG:

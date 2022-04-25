@@ -7,7 +7,11 @@
     </li>
     <li>
         <a href="{% url 'products:index' %}"
+<<<<<<< HEAD
             class="{% if request.resolver_match.namespace == 'products' %}active{% endif %}">
+=======
+            class="{% if request.resolver_match.url_name == 'index' %}active{% endif %}">
+>>>>>>> 5539558d9be13560ab5dc147173724041e4ec066
             продукты
         </a>
     </li>
@@ -32,8 +36,12 @@
     </li>
 </ul>
 <a href="#" class="search"></a>
+<<<<<<< HEAD
 <a href="{% url 'basket:view' %}" class="basket">
     <span>
         {% if basket %} {{ basket|length }} {% endif %}
     </span>
 </a>
+=======
+<a href="#" class="basket"></a>
+>>>>>>> 5539558d9be13560ab5dc147173724041e4ec066

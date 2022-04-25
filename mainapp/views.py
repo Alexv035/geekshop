@@ -1,9 +1,15 @@
 from django.conf import settings
+<<<<<<< HEAD
 from django.shortcuts import get_object_or_404, render
 from django.utils import timezone
 
 from basketapp.models import Basket
 
+=======
+from django.shortcuts import render
+from django.utils import timezone
+
+>>>>>>> 5539558d9be13560ab5dc147173724041e4ec066
 from .models import Contact, Product, ProductCategory
 
 
@@ -19,6 +25,7 @@ def main(request):
 def products(request, pk=None):
     title = "продукты"
     links_menu = ProductCategory.objects.all()
+<<<<<<< HEAD
 
     basket = []
     if request.user.is_authenticated:
@@ -43,14 +50,19 @@ def products(request, pk=None):
             "basket": basket,
         }
         return render(request, "mainapp/products_list.html", content)
+=======
+>>>>>>> 5539558d9be13560ab5dc147173724041e4ec066
     same_products = Product.objects.all()
     content = {
         "title": title,
         "links_menu": links_menu,
         "same_products": same_products,
         "media_url": settings.MEDIA_URL,
+<<<<<<< HEAD
         "same_products": same_products,
         "basket": basket,
+=======
+>>>>>>> 5539558d9be13560ab5dc147173724041e4ec066
     }
     if pk:
         print(f"User select category: {pk}")
